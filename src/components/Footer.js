@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FooterStyle } from '../styles';
 //Images
 import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
@@ -14,7 +15,7 @@ const Footer = () => {
            <ul>
                <li className="footer-link"><a href="#">About</a></li>
                <li className="footer-link"><a href="#">Contact</a></li>
-               <li className="footer-link"><a href="#">Blog</a></li>
+               <li className="footer-link"><a href="https://www.yamaclimbing.com/yama-climbing-blog" rel="noreferrer" target="_blank"> Blog</a></li>
            </ul>
            </div>
            <div className="icons">
@@ -35,31 +36,7 @@ const Footer = () => {
     )
 }
 
-const FooterStyle = styled.div`
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    padding: 4rem 9rem 4rem 9rem;
-    margin: 4rem auto 0;
-    background-color: #F2EEDA;
-    .footer-link {
-        margin: 0.5rem 0;
-    }
-    .footer-link a {
-        font-size: 1.2rem;
-    }
-    .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        opacity: 0.65;
-    }
-    img {
-        width: 48px;
-        margin: 0 0.8rem;
-    }
-`;
+
 
 export default Footer;
 

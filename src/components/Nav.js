@@ -2,11 +2,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+//Images
+import logo from '../img/logo.svg';
 
 const Nav = () => {
     return(
         <StyledNav>
-            <h1>ICON</h1>
+            <img className="logo" src={logo} alt="logo" />
                 <ul>
                     <li>
                         <a href="#">Projects</a>
@@ -28,8 +30,10 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     margin: auto;
     align-items: center;
-    padding: 1rem 10rem;
-    /* background-color: #282828; */
+    padding: 1rem 10rem 1rem 2.4rem;
+    .logo {
+        height: 68px;
+    }
     a {
         color: #F2EEDA;
         text-decoration: none;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CaseContainer } from '../styles';
+import { CaseContainer, CenterImage } from '../styles';
 //Images
 import flowchart from '../img/flowchart.png';
 import mobile from '../img/mobile.png';
@@ -50,15 +50,7 @@ const Hairtoppers = () => {
     );
 };
 
-const CenterImage = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    .case-image,
-    .mobile {
-        width: 100%;
-    }
-`;
+
 
 
 export default Hairtoppers; 

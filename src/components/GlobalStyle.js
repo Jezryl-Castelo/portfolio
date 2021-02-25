@@ -10,8 +10,7 @@ body {
     background: #757D7E;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-    max-width: 1440px;
-    /* max-width: 1524px; */
+    
 }
 h2 {
     color: #F2EEDA;
@@ -36,7 +35,7 @@ h4 {
 h5{
     font-size: 1.7rem;
     font-weight: 400;
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
 }
 h6 {
     font-size: 1.4rem;
@@ -51,9 +50,7 @@ a {
 li {
         list-style: none;
     }
-.case-image {
-    height: 400;
-}
+
 
 `;
 

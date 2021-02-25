@@ -25,7 +25,7 @@ const CaseSticker = () => {
             <p>The current proofing process lacks important details and difficult-to-find information about a user's order. If details are missed, this can lead to printing the wrong product, size, quantity, and inaccurate pricing. The user will then have to contact Sticker Mule to resolve the issue. The support team will investigate the case in order to determine the best solution.</p>
 
             <h5>Design Process</h5>
-            <h6>Research</h6>
+    
             <p>I wanted to learn what could be contributing to errors in Sticker Mule’s proofing process. Since Sticker Mule only offers customer support via email, I chose to review emails and find cases that involved errors related to proofing. I documented emails that were sent before their proof was approved and after production.</p>
 
             <h6>What I Learned</h6>
@@ -51,11 +51,11 @@ const CaseSticker = () => {
         <h6>User Personas</h6>
         <Image>
             <img className="persona" src={maria} alt="maria" />
-        <p>Maria Valquez is a Graphic Designer for a tech company in San Francisco. Maria works with multiple teams to create multiple designs for events.She places an order at least once a month and needs to have the designs approved before production.She's often on a tight deadline and important details can't be missed. </p>
+        <p className="persona-text">Maria Valquez is a Graphic Designer for a tech company in San Francisco. Maria works with multiple teams to create multiple designs for events.She places an order at least once a month and needs to have the designs approved before production.She's often on a tight deadline and important details can't be missed. </p>
         </Image>
         <Image>
             <img className="persona" src={mike} alt="mike" />
-        <p>Mike Henderson owns a construction company.
+        <p className="persona-text">Mike Henderson owns a construction company.
 He wants to promote his company with stickers on their hard hats and trucks.Once in a while, he needs labels or packaging materials.He’s not familiar with print standards and rarely makes purchases online.</p>
         </Image>
         <h6>Task Evaluation</h6>
@@ -99,17 +99,20 @@ He wants to promote his company with stickers on their hard hats and trucks.Once
 
 const Image = styled.div`
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
     img {
         height: 440px;
-        margin: 0 1.2rem;
+        margin: 1rem 1.2rem;
     }
     figcaption {
         font-weight: 200;
-        width: 40rem;
+        width: 32rem;
         font-size: 1.1rem;
         font-style: italic;
-        padding: 0.6rem 0;
+        padding: 0.6rem 0 0.6rem 1rem;
     }
     .side-text {
         width: 100%;
@@ -120,6 +123,9 @@ const Image = styled.div`
     }
     .persona {
         height: 10rem;
+    }
+    .persona-text {
+        padding-top: 2rem;
     }
 `;
 

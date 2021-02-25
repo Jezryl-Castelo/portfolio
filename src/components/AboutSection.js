@@ -2,6 +2,7 @@ import React from 'react';
 import jezryl from '../img/jezryl.svg';
 import portrait from '../img/portrait.png';
 import styled from 'styled-components';
+
 //Animation
 import {motion} from 'framer-motion';
 import {titleAnim, fade, photoAnim}from '../animations';

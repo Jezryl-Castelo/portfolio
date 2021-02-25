@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 //Images
 import recipe from "../img/recipe-app.png";
@@ -49,21 +50,27 @@ export const DesignProjects = () => {
             <div className="title-line"></div>
 
         <Card>
+        <Link to="/relay">
             <img className="card-img" src={relay} alt="recipe"/>
             <h4 className="card-title">Team Communication Tool</h4>
         <p className="card-about">A tool to help your team exchange information</p>
+        </Link>
         </Card>
 
         <Card>
+        <Link to="/case-study">
             <img className="card-img" src={stickers} alt="recipe"/>
             <h4 className="card-title">Order Summary Re-design</h4>
         <p className="card-about">Brainstorming through customer issues to find a solution to reduce order errors.</p>
+        </Link>
         </Card>
 
         <Card>
+        <Link to="/hairtoppers">
             <img className="card-img" src={hair} alt="recipe"/>
             <h4 className="card-title">Define the Product</h4>
         <p className="card-about">A simple site to help users understand the product and how it works.</p>
+        </Link>
         </Card>
     </CardContainer>
     )

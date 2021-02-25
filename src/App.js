@@ -4,10 +4,12 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import GlobalStyle from './components/GlobalStyle';
+import Footer from './components/Footer';
 import StickerMulePage from './pages/StickerMulePage';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import CaseSticker from './components/CaseSticker';
 import ProjectHair from './pages/ProjectHair';
+import RelayPage from './pages/RelayPage';
 
 
 function App() {
@@ -28,10 +30,15 @@ function App() {
     <Route path="/hairtoppers" exact>
       <ProjectHair />
     </Route>
+    <Route path="/relay" exact>
+      <RelayPage />
+    </Route>
     <Route path="/contact" exact>
       <Contact />
     </Route>
+    
     </Switch>
+    <Footer />
     </div>
   );
 }
