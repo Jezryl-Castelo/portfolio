@@ -24,8 +24,10 @@ li {
 `;
 
 export const CenterImage = styled.div`
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+   
     margin: 0 auto;
     .case-image,
     .mobile {
@@ -53,8 +55,13 @@ background-color: #F2EEDA;
     margin: 0 auto;
     opacity: 0.65;
 }
+img:hover {
+padding: 0;
+transition: all 0.1s ease-out;
+}
 img {
-    width: 48px;
+    width: 3.6rem;
     margin: 0 0.8rem;
+    padding: 0.2rem;
 }
 `;

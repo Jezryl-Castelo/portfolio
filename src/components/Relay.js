@@ -18,8 +18,10 @@ const Relay = () => {
 
     <p>Here's a glimpse.</p>
     <RelayImages>
+    <div className="images">
     <img src={relay} alt="screenshoot" />
     <img src={report} alt="screenshoot" />
+    </div>
     <img src={design} alt="screenshoot" />
     </RelayImages>
 
@@ -28,8 +30,16 @@ const Relay = () => {
 };
 
 const RelayImages = styled(CenterImage)`
+display: flex;
+
 img {
     height: 400px;
+    padding: 1rem;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
 }`;
 
 export default Relay;

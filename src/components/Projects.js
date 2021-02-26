@@ -80,7 +80,7 @@ export const DesignProjects = () => {
 const CardContainer = styled(Description)`
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     overflow: hidden;
     .title-line {
         background: #F2EEDA;
@@ -92,11 +92,12 @@ const CardContainer = styled(Description)`
 
 const Card =styled.div`
     background: rgba(242, 238, 218, 20%);
-    width: 28rem;
+    width: 27rem;
     height: 35rem;
     margin: 2rem auto;
     padding: 0.8rem;
     text-align: center;
+    box-shadow: 2px 2px 6px 2px #574C48;
     
     .card-img {
         min-height: 25rem;

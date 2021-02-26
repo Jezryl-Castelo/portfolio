@@ -41,17 +41,31 @@ h6 {
     font-size: 1.4rem;
     padding-bottom: 0.5rem;
     font-weight: 300;
-  
 }
 a {
     text-decoration: none;
-    color: #32302F;;
+    color: #32302F;
 }
 li {
         list-style: none;
     }
-
-
+figcaption {
+    font-weight: 200;
+    width: 32rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 0.6rem 0 0.6rem 1rem;
+    }
+ol {
+    padding: 0 2rem 2rem 2rem;
+}
+.check {
+    font-size: 2.5rem;
+    
+    
+    
+} 
 `;
+
 
 export default GlobalStyle;

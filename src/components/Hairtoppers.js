@@ -42,13 +42,34 @@ const Hairtoppers = () => {
             <CenterImage>
             <img className="mobile" src={mobile} alt="mobile" />
             </CenterImage>
-            <button>View Site</button>
-            
+            <Button>
+            <a className="button-text" href="https://www.hairtopper.shop/" target="_blank" rel="noreferrer">View Website</a>
+            </Button>
+
             <h5>Conclusion</h5>
             <p>The site was launched mid-January and has increased in visits and sales. At the start of the project, the client wanted traffic to continue to their e-commerce sites to increase reviews, however, seeing the increased traffic from YouTube and Instagram, they would like to offer payment on the site. From this project, I learned about the hair industry and how to create an interface with facts and not overload the screen, especially for mobile.</p>
         </CaseContainer>
     );
 };
+
+const Button = styled.div`
+    display: grid;
+    width: 16rem;
+    height: 4rem;
+    padding: 10px;
+    background: #9E5EA7;
+    box-shadow: 0px 2px 2px 2px #5B3761;
+    border-radius: 4px;
+    text-align: center;
+    align-content: center;
+    margin: 3rem;
+    .button-text {
+        font-size: 1.4rem;
+    }
+    &:hover {
+        background-color: #5B3761;
+    }
+`;
 
 
 
