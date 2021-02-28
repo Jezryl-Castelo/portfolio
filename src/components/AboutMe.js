@@ -96,25 +96,31 @@ const AboutMe = () => {
         </ul>
     </Dropdown>
         </CenterRow>
-    <div className="design-details">
+    <DesignSkillsStyle>
+    <div className="design-section">
     <h5>Design Skills</h5>
     <p>Illustration</p>
     <p>Graphic Design</p>
     <p>Industrial Design</p>
     <p>Typography</p>
-    
+    </div>
+    <div className="design-section">
     <h5>Design Tools</h5>
     <p>Illustrator</p>
     <p>Photoshop</p>
     <p>Figma</p>
     <p>XD</p>
-    
+    </div>
+    </DesignSkillsStyle>
+    <DesignSkillsStyle>
+    <div className="design-section">
     <h5>Interests</h5>
     <p>Climbing</p>
     <p>Fly Fishing</p>
     <p>Pinterest</p>
     <p>Cooking over a fire</p>
     </div>
+    </DesignSkillsStyle>
    
     </>
     )
@@ -152,7 +158,7 @@ const Dropdown = styled.div`
     position: absolute;
     background-color: #F2EEDA;
     min-width: 400px;
-    width: 520px;
+    width: 480px;
     margin-top: 23px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
@@ -175,6 +181,7 @@ const Dropdown = styled.div`
 
 const CenterRow = styled.div`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2rem 10rem;
@@ -199,5 +206,22 @@ align-items: center;
     justify-self: end;
     margin-right: 0.8rem;
 }
+`;
 
+const DesignSkillsStyle = styled.div`
+display: flex;
+align-items: center;
+padding: 0 10rem;
+
+.design-section {
+    margin: 5rem auto;
+}
+.design-section h5 {
+    font-size: 1.8rem;
+    color: #F2EEDA;
+}
+.design-section p {
+    font-size: 1.4rem;
+    
+}
 `;

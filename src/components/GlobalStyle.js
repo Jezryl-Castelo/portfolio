@@ -10,7 +10,7 @@ body {
     background: #757D7E;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-    
+    color: #32302F;
 }
 h2 {
     color: #F2EEDA;
@@ -60,11 +60,12 @@ ol {
     padding: 0 2rem 2rem 2rem;
 }
 .check {
-    font-size: 2.5rem;
-    
-    
-    
+    font-size: 2.5rem;    
 } 
+.about-title {
+    color: #F2EEDA;
+    text-align: center;
+}
 `;
 
 
