@@ -1,7 +1,7 @@
 import React from 'react';
 //styles
 import styled from 'styled-components';
-import {CenterRow} from '../styles';
+
 
 
 const Contact = () => {
