@@ -79,30 +79,33 @@ export const Dropdown = styled.div`
  width: 200px;
  text-align: center;
  padding-top: 28px;
- font-size: 1.5rem;
+ font-size: 1.2rem;
  color: #32302F;
- box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+ box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
+ border-radius: 0 24px;
 }
 .menu-item li {
  text-decoration: none;
  padding: 28px 42px;
  color: #32302F;
  display: block;
- text-align: left; 
+ text-align: left;
+
 }
 .drop-menu {
  display: none;
  position: absolute;
  background-color: #F2EEDA;
- min-width: 400px;
- width: 480px;
+ min-width: 350px; 
+ width: 30%;
  margin-top: 23px;
- box-shadow: 0 3px 6px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+ box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
  z-index: 1;
 }
 .drop-menu-item {
  width: 100%;
  min-height: 80px;
+ font-size: 1.2rem; 
 }
 .drop-menu-item li {
  color: #555;
@@ -131,7 +134,7 @@ grid-template-rows: repeat(1fr);
 grid-template-areas: "text status";
 align-items: center;
 :hover {
-    background-color: #A8D5E2;
+    background-color: #9ABDC7;
     transition-duration: 0.5s;
 }
 .li {
@@ -141,5 +144,6 @@ align-items: center;
     grid-area: status;
     justify-self: end;
     margin-right: 0.8rem;
+    font-size: 1.5rem;
 }
 `;

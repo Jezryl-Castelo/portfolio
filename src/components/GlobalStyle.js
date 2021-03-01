@@ -29,7 +29,7 @@ h3 {
     color: #F2EEDA;
 }
 h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding-bottom: 3rem;
 }
 h5{

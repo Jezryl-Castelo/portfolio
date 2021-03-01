@@ -97,7 +97,7 @@ const Card =styled.div`
     margin: 2rem auto;
     padding: 0.7rem;
     text-align: center;
-    box-shadow: 2px 2px 6px 2px #574C48;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
     .card-img {
         height: 20rem;
         width: 88%;

@@ -2,7 +2,7 @@ import React from 'react';
 //styles
 import styled from 'styled-components';
 import {Dropdown, CenterRow, CheckIcon} from '../styles';
-
+import GlobalStyle from '../components/GlobalStyle';
 //Icons
 import { Icon } from '@iconify/react';
 import circleCheck from '@iconify/icons-akar-icons/circle-check';
@@ -12,6 +12,7 @@ import flyfishing from '../img/fly_fishing.svg';
 const Education = () => {
     return(
         <>
+        
         <h5 className="about-title">Education</h5>
         <CenterRow>
         <EdBoxStyles>
@@ -113,16 +114,15 @@ const Education = () => {
     <p>XD</p>
     </div>
     </DesignSkillsStyle>
+
     <DesignSkillsStyle>
     <div className="design-section">
-    
-    <h5>Interests</h5>
-    
-        <img src={interests} alt="icons" />
-        
-</div>
+        <h5>Interests</h5>
+        <img className="interests" src={interests} alt="icons" />
+     </div> 
     </DesignSkillsStyle>
    
+    
     </>
     )
 }
@@ -162,20 +162,24 @@ const EdBoxStyles = styled(Dropdown)`
 const DesignSkillsStyle = styled.div`
 display: flex;
 align-items: center;
-padding: 0 10rem;
-
+padding: 0 8rem;
+width: 100%;
 .design-section {
-    margin: 5rem auto;
+    margin: 3rem auto;
 }
 .design-section h5 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #F2EEDA;
+    text-align: center;
 }
 .design-section p {
-    font-size: 1.4rem; 
+    font-size: 1.2rem; 
 }
 p {
     color: #F2EEDA;
 }
-
+.interests {
+    width: 70vw;
+    margin-bottom: 3rem;
+}
 `;
