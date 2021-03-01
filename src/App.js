@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import StickerMulePage from './pages/StickerMulePage';
 import AboutMePage from './pages/AboutMePage';
 import { Switch, Route, useLocation } from 'react-router-dom';
-import CaseSticker from './components/CaseSticker';
 import ProjectHair from './pages/ProjectHair';
 import RelayPage from './pages/RelayPage';
 

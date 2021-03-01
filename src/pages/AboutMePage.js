@@ -1,6 +1,7 @@
-
 import React from 'react';
-import AboutMe from '../components/AboutMe';
+//Page Components
+import Header from '../components/Header';
+import Education from '../components/Education';
 //Animations
 import { pageAnimation } from '../animations';
 import { motion } from 'framer-motion';
@@ -8,7 +9,9 @@ import { motion } from 'framer-motion';
 const AboutMePage = () => {
     return(
     <motion.div exit="exit" variants={ pageAnimation } initial="hidden" animate="show">
-        <AboutMe />
+        <Header />
+        <Education />
+
     </motion.div>
     )
 }

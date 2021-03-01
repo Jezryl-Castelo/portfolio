@@ -1,21 +1,22 @@
 import React from 'react';
+//styles
 import styled from 'styled-components';
-import AboutSection from './AboutSection';
+import {Dropdown, CenterRow, CheckIcon} from '../styles';
+
 //Icons
 import { Icon } from '@iconify/react';
 import circleCheck from '@iconify/icons-akar-icons/circle-check';
+import interests from '../img/interests_icons.svg';
+import flyfishing from '../img/fly_fishing.svg';
 
-
-const AboutMe = () => {
+const Education = () => {
     return(
         <>
-        <AboutSection />
-        
         <h5 className="about-title">Education</h5>
         <CenterRow>
-        <Dropdown>
+        <EdBoxStyles>
         <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item codecademy">
                 Codecademy
                 <ul class="drop-menu">
                 <CheckIcon>
@@ -40,12 +41,11 @@ const AboutMe = () => {
                 </CheckIcon>
                 </ul>
             </li>
-        </ul>
-        </Dropdown>
-
-        <Dropdown>
+         </ul>
+        </EdBoxStyles>
+        <EdBoxStyles>
         <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item udemy">
                 Udemy
                 <ul class="drop-menu">
                 <CheckIcon>
@@ -64,10 +64,10 @@ const AboutMe = () => {
                 </ul>
             </li>
         </ul>
-    </Dropdown>
-    <Dropdown>
+        </EdBoxStyles>
+        <EdBoxStyles>
         <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item edx">
                 Edx
                 <ul class="drop-menu">
                 <CheckIcon>
@@ -77,10 +77,10 @@ const AboutMe = () => {
                 </ul>
             </li>
         </ul>
-    </Dropdown>
-    <Dropdown>
+        </EdBoxStyles>
+    <EdBoxStyles>
         <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item freeCodeCamp">
                 FreeCodeCamp
                 <ul class="drop-menu">
                 <CheckIcon>
@@ -94,8 +94,9 @@ const AboutMe = () => {
                 </ul>
             </li>
         </ul>
-    </Dropdown>
+        </EdBoxStyles>
         </CenterRow>
+        
     <DesignSkillsStyle>
     <div className="design-section">
     <h5>Design Skills</h5>
@@ -114,99 +115,49 @@ const AboutMe = () => {
     </DesignSkillsStyle>
     <DesignSkillsStyle>
     <div className="design-section">
+    
     <h5>Interests</h5>
-    <p>Climbing</p>
-    <p>Fly Fishing</p>
-    <p>Pinterest</p>
-    <p>Cooking over a fire</p>
-    </div>
+    
+        <img src={interests} alt="icons" />
+        
+</div>
     </DesignSkillsStyle>
    
     </>
     )
 }
+export default Education;
 
-export default AboutMe;
 
-const Dropdown = styled.div`
-   .menu, .drop-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px;
-}
-.menu-item {
-    display: inline-block;
-    background-color: #F2eeda;
-    position: relative;
-    height: 80px;
-    width: 200px;
-    text-align: center;
-    padding-top: 28px;
-    font-size: 1.4rem;
-    color: #32302F;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-.menu-item li {
-    text-decoration: none;
-    padding: 28px 42px;
-    color: #32302F;
-    display: block;
-    text-align: left; 
-}
-.drop-menu {
-    display: none;
-    position: absolute;
-    background-color: #F2EEDA;
-    min-width: 400px;
-    width: 480px;
-    margin-top: 23px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-.drop-menu-item {
-    width: 100%;
-    max-height: 80px;
-}
-.drop-menu-item li {
-    color: #555;
-    width: 100%;
-}
-.menu-item:hover .drop-menu{
-    display: block;
-}
-.menu-item:hover {
-    background-color: #A8D5E2;
-    transition-duration: 0.5s;
-}       
+
+const EdBoxStyles = styled(Dropdown)`
+    .codecademy {
+        background-color: #E5B2AC;
+        height: 200px;
+        padding-top: 80px;
+    }
+    .udemy {
+        background-color: #A9D4C7;
+        height: 150px;
+        width: 300px;
+        padding-top: 58px;
+    }
+    .udemy.drop-menu-item {
+        height: 88px;
+    }
+    .edx {
+        background-color: #EAB699;
+        height: 200px;
+        padding-top: 80px;
+    }
+    .freeCodeCamp {
+        height: 150px;
+        width: 300px;
+        padding-top: 58px;
+        background-color: #97BDC7;
+    }
 `;
 
-const CenterRow = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 10rem;
-`;
-
-const CheckIcon = styled.div`
-display: grid;
-grid-template-columns: 80% 1fr;
-grid-template-rows: repeat(1fr);
-grid-template-areas: "text status";
-align-items: center;
-
-:hover {
-    background-color: #A8D5E2;
-    transition-duration: 0.5s;
-}
-.li {
-    grid-area: text;
-}
-.check {
-    grid-area: status;
-    justify-self: end;
-    margin-right: 0.8rem;
-}
-`;
 
 const DesignSkillsStyle = styled.div`
 display: flex;
@@ -221,7 +172,10 @@ padding: 0 10rem;
     color: #F2EEDA;
 }
 .design-section p {
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem; 
 }
+p {
+    color: #F2EEDA;
+}
+
 `;

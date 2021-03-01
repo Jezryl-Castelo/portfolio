@@ -15,7 +15,7 @@ body {
 h2 {
     color: #F2EEDA;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 68%;
     padding-left: 1rem;
 
@@ -25,7 +25,7 @@ h2 {
 h3 {
     width: 90%;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #F2EEDA;
 }
 h4 {
@@ -33,7 +33,7 @@ h4 {
     padding-bottom: 3rem;
 }
 h5{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     padding-bottom: 1.6rem;
 }
@@ -65,6 +65,7 @@ ol {
 .about-title {
     color: #F2EEDA;
     text-align: center;
+    font-size: 2rem;
 }
 `;
 

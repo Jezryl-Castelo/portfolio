@@ -5,10 +5,10 @@ import styled from 'styled-components';
 
 //Animation
 import {motion} from 'framer-motion';
-import {titleAnim, fade, photoAnim}from '../animations';
+import {titleAnim, photoAnim}from '../animations';
 
 
-const AboutSection = () => {
+const Header = () => {
     return(
         <Description>
             <motion.img variants={titleAnim} className="name" src={jezryl} alt="name">
@@ -45,4 +45,4 @@ export const Description = styled.div`
     }
 `;
 
-export default AboutSection;
+export default Header;

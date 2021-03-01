@@ -8,7 +8,7 @@ import shortly from "../img/shortly.png";
 import relay from "../img/relay_girl.png";
 import stickers from "../img/stickermule.png";
 import hair from "../img/hairtoppers.png";
-import { Description } from './AboutSection';
+import { Description } from './Header';
 
 export const FrontEndProjects = () => {
     return (
@@ -92,24 +92,23 @@ const CardContainer = styled(Description)`
 
 const Card =styled.div`
     background: rgba(242, 238, 218, 20%);
-    width: 27rem;
-    height: 35rem;
+    width: 22rem;
+    height: 29rem;
     margin: 2rem auto;
-    padding: 0.8rem;
+    padding: 0.7rem;
     text-align: center;
     box-shadow: 2px 2px 6px 2px #574C48;
-    
     .card-img {
-        min-height: 25rem;
-        width: 90%;
+        height: 20rem;
+        width: 88%;
     }
     .card-title {
-    font-size: 1.6rem;
-    padding: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
     color: #32302F;
     }
     .card-about {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: lighter;
         padding: 0 0.3rem;
         color: #32302F;

@@ -53,22 +53,22 @@ const StyledNav = styled.nav`
     align-items: center;
     padding: 1rem 10rem 1rem 2.4rem;
     .logo {
-        height: 68px;
+        height: 54px;
     }
     a {
         color: #F2EEDA;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     ul {
         display: flex;
         list-style: none;
     }
-    #Logo {
+    /* #Logo {
         font-size: 1.5rem;
         font-family: "Lobster", cursive;
         font-weight: lighter;
-    }
+    } */
     li {
         padding-left: 10rem;
         position: relative;
