@@ -64,11 +64,6 @@ const StyledNav = styled.nav`
         display: flex;
         list-style: none;
     }
-    /* #Logo {
-        font-size: 1.5rem;
-        font-family: "Lobster", cursive;
-        font-weight: lighter;
-    } */
     li {
         padding-left: 10rem;
         position: relative;

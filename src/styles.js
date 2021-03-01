@@ -101,6 +101,7 @@ export const Dropdown = styled.div`
  margin-top: 23px;
  box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
  z-index: 1;
+ 
 }
 .drop-menu-item {
  width: 100%;
@@ -113,10 +114,12 @@ export const Dropdown = styled.div`
 }
 .menu-item:hover .drop-menu{
  display: block;
+
 }
 .menu-item:hover {
  background-color: #A8D5E2;
  transition-duration: 0.5s;
+ 
 }       
 `;
 

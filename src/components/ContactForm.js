@@ -9,7 +9,7 @@ const Contact = () => {
     <FormStyle>
     
    
-    <h5>Let's Connect</h5>
+    <h5 className="form-title">Let's Connect</h5>
     
     <div className="card-container">
     <textarea name="message" COLS="35" ROWS="25" placeholder="Your message" required></textarea>
@@ -42,6 +42,9 @@ const FormStyle = styled.div`
     text-align: center;
     /* display: flex; */
     justify-content: center;
+    .form-title {
+        margin: 8rem auto 4rem;
+    }
     textarea {
         background-color: #F2EEDA;
     }
@@ -49,11 +52,9 @@ const FormStyle = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 80%;
-        /* grid-template-areas: 
-        "message stamp"
-        "message submit"; */
         border: 1px solid #32302F;
         width: 100%;
+        margin-bottom: 18rem;
     }
     .stamp {
         text-align: right;

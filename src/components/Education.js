@@ -1,18 +1,15 @@
 import React from 'react';
 //styles
-import styled from 'styled-components';
 import {Dropdown, CenterRow, CheckIcon} from '../styles';
-import GlobalStyle from '../components/GlobalStyle';
+import styled from 'styled-components';
 //Icons
 import { Icon } from '@iconify/react';
 import circleCheck from '@iconify/icons-akar-icons/circle-check';
 import interests from '../img/interests_icons.svg';
-import flyfishing from '../img/fly_fishing.svg';
 
 const Education = () => {
     return(
         <>
-        
         <h5 className="about-title">Education</h5>
         <CenterRow>
         <EdBoxStyles>
@@ -60,8 +57,7 @@ const Education = () => {
                 <CheckIcon>
                     <li class="drop-menu-item">React Bootcamp</li>
                     <p className="check">32%</p>
-                </CheckIcon>
-                
+                </CheckIcon> 
                 </ul>
             </li>
         </ul>

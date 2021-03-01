@@ -2,6 +2,7 @@ import React from "react";
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animations';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     return(
@@ -11,8 +12,7 @@ const Contact = () => {
         initial="hidden" 
         animate="show"
         style={{ background: "#fff" }}>
-            <p>Contact Me</p>
-            <p>Contact Me</p>
+            <ContactForm />
         </motion.div>
     );
 };

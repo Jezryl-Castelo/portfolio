@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { FooterStyle } from '../styles';
+import {Link} from 'react-router-dom';
 //Images
 import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
@@ -13,8 +13,8 @@ const Footer = () => {
        <FooterStyle>
            <div>
            <ul>
-               <li className="footer-link"><a href="#">About</a></li>
-               <li className="footer-link"><a href="#">Contact</a></li>
+               <li className="footer-link"><Link to="/about-me">About Me</Link></li>
+               <li className="footer-link"><Link to="/contact">Contact</Link></li>
                <li className="footer-link"><a href="https://www.yamaclimbing.com/yama-climbing-blog" rel="noreferrer" target="_blank"> Blog</a></li>
            </ul>
            </div>
