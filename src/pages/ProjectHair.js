@@ -1,6 +1,5 @@
 import React from 'react';
 //Page Components
-import Footer from '../components/Footer';
 import Hairtoppers from '../components/Hairtoppers';
 //Animations
 import {motion} from "framer-motion";
