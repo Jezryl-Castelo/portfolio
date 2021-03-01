@@ -28,7 +28,7 @@ export const Description = styled.div`
     width: 90vw;
     align-items: center;
     justify-content: center;
-    padding-bottom: 14em;
+    padding-bottom: 8rem;
     margin: 0 auto;
     .name {
         min-width: 32vw;
@@ -38,7 +38,8 @@ export const Description = styled.div`
         padding-right: 3rem;
     }
     .profile {
-        width: 32vw;
+        width: auto;
+        height: 25rem;
         position: absolute;
         right: 0;
         top: 7rem;

@@ -11,7 +11,7 @@ const Contact = () => {
         variants={pageAnimation} 
         initial="hidden" 
         animate="show"
-        style={{ background: "#fff" }}>
+        >
             <ContactForm />
         </motion.div>
     );

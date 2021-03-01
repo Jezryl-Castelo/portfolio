@@ -1,34 +1,22 @@
 import React from 'react';
 //styles
 import styled from 'styled-components';
+import photo from '../img/photo.jpg';
 
 
 
 const Contact = () => {
     return(
     <FormStyle>
+    <h5 className="contact-title">Let's Connect</h5>
+    <div className="contact-card">
     
-   
-    <h5 className="form-title">Let's Connect</h5>
-    
-    <div className="card-container">
-    <textarea name="message" COLS="35" ROWS="25" placeholder="Your message" required></textarea>
-    
-
-    {/* <div className="line"></div> */}
-
-    <div className="right-side">
-      <div id="send">
-        <form>
-            <div className="stamp">
-              <input class="send-btn" type="submit" value="Send"></input>
-            </div>
-            <div className="contact-info">
-              <input type="text" name="name" placeholder="Name"></input>
-              <input type="email" name="email" placeholder="E-mail" required></input>
-            </div>
-        </form>
-      </div>
+        <img className="self" src={photo} alt="profile" />
+        <div className="contact-right">
+        <p className="email">Email</p> 
+        <p className="address">jez.castelo@gmail.com</p>
+        </div>
+    <div className="line">
     </div>
     </div>
     
@@ -37,39 +25,35 @@ const Contact = () => {
 };
 
 const FormStyle = styled.div`
+    height: 80vh;
     background-color: #F2EEDA;
-    display: grid;
-    text-align: center;
-    /* display: flex; */
-    justify-content: center;
-    .form-title {
-        margin: 8rem auto 4rem;
+    text-align: left;
+    .contact-title {
+        font-size: 2rem;
+        padding: 6rem;
+        text-align: center;
     }
-    textarea {
-        background-color: #F2EEDA;
+    .self {
+        grid-area: photo;
+        height: 24.8rem;
+        border-radius: 1px 300px 1px 1px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
     }
-    .card-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 80%;
-        border: 1px solid #32302F;
-        width: 100%;
-        margin-bottom: 18rem;
+    .contact-card {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* justify-content: center; */
+        text-align: left;
     }
-    .stamp {
-        text-align: right;
-        padding: 0.8rem;
+    
+    .email {
+        font-size: 1.4rem;
+        padding: 1.2rem 0 0.6rem;
     }
-    .send-btn {
-        width: 60px;
-        height: 52px;  
-    .message {
-       
-        height: 80%;
-    }
-    .contact-info input {
-        width: 90%;
-    }
+    .address {
+        font-size: 1.2rem;
     }
 `;
 

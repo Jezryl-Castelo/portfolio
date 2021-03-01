@@ -10,7 +10,6 @@ overflow: hidden;
 background-color: #F2EEDA;
 padding: 5rem 20rem;
 p {
-    
     font-weight: lighter;
     padding-bottom: 2rem;
     font-size: 1.2rem;
@@ -43,6 +42,7 @@ height: 100%;
 padding: 4rem 9rem 4rem 9rem;
 margin: 0 auto;
 background-color: #F2EEDA;
+overflow: hidden;
 .footer-link {
     margin: 0.5rem 0;
 }

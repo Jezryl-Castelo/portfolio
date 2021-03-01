@@ -31,7 +31,6 @@ const Relay = () => {
 
 const RelayImages = styled(CenterImage)`
 display: flex;
-
 img {
     height: 400px;
     padding: 1rem;
@@ -40,6 +39,10 @@ img {
     display: flex;
     flex-wrap: wrap;
   justify-content: center;
-}`;
+}
+@media (max-width: 800px) {
+    background-color: pink;
+}
+`;
 
 export default Relay;

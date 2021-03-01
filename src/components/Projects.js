@@ -93,8 +93,8 @@ const CardContainer = styled(Description)`
 const Card =styled.div`
     background: rgba(242, 238, 218, 20%);
     width: 22rem;
-    height: 29rem;
-    margin: 2rem auto;
+    height: 27.4rem;
+    margin: 2rem 1rem;
     padding: 0.7rem;
     text-align: center;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
@@ -110,7 +110,6 @@ const Card =styled.div`
     .card-about {
         font-size: 1.1rem;
         font-weight: lighter;
-        padding: 0 0.3rem;
         color: #32302F;
     }
 `;
