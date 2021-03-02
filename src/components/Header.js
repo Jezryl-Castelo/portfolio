@@ -10,7 +10,7 @@ import {titleAnim, photoAnim}from '../animations';
 
 const Header = () => {
     return(
-        <Description>
+        <HeaderStyle>
            
             <motion.img variants={titleAnim} className="name" src={jezryl} alt="name">
             </motion.img>
@@ -23,9 +23,59 @@ const Header = () => {
             
                 <motion.img variants={photoAnim} className="profile" src={portrait} alt="profile"></motion.img>
                 
-        </Description>
+        </HeaderStyle>
     )
 }
+
+export const HeaderStyle = styled.div`
+    display: grid;
+    width: 80vw;
+    margin: 0 auto; 
+    grid-template-areas:
+    "name about photo";
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+    .name {
+        height: 200px;
+    }
+    .about {
+        width: 70%;
+        padding-top: 2.8rem;
+        padding-left: 0;
+    }
+    .profile {
+        height: 27rem;
+        position: absolute;
+        right: 2rem;
+        top: 8rem;
+    }
+    @media (max-width: 1375px) {
+        display: block;
+    }
+    @media (max-width: 980px) {
+        width: 98vw;
+    .profile {
+        right: -5rem;
+    }
+   @media (max-width: 720px) {
+       margin: 0 auto;
+       position: relative;
+    .profile {
+        height: 21rem;
+        top: 18rem;
+        z-index: -1;
+       }
+    .about {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem; 
+   }
+`;
+
+
+
+
 export const Description = styled.div`
     display: flex;
     width: 90%;
