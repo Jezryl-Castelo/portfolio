@@ -52,18 +52,21 @@ export const HeaderStyle = styled.div`
     }
     @media (max-width: 1375px) {
         display: block;
+        padding-bottom: 4rem;
     }
     @media (max-width: 980px) {
         width: 98vw;
     .profile {
         right: -5rem;
     }
-   @media (max-width: 720px) {
+    @media (max-width: 720px) {
        margin: 0 auto;
        position: relative;
+       padding-top: 1rem;
+       padding-bottom: 10rem;
     .profile {
         height: 21rem;
-        top: 18rem;
+        top: 13rem;
         z-index: -1;
        }
     .about {
@@ -74,10 +77,8 @@ export const HeaderStyle = styled.div`
    .name {
        width: 90%;
    }
+}
 `;
-
-
-
 
 export const Description = styled.div`
     display: flex;
@@ -100,8 +101,6 @@ export const Description = styled.div`
         right: 0;
         top: 7rem;
     }
-
-
 `;
 
 export default Header;

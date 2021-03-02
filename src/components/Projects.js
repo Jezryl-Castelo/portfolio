@@ -32,8 +32,8 @@ export const FrontEndProjects = () => {
         </Card>
 
         <Card>
-            <a className="card-link" href="https://vercel.com/dashboard/projects" rel="noreferrer" target="_blank">
-                <img className="card-img" src={shortly} alt="recipe"/>
+<a className="card-link" href="https://vercel.com/dashboard/projects" rel="noreferrer" target="_blank">
+                <img className="card-img" src={shortly} alt="recipe"/> 
             
             <h4 className="card-title">Frontend Mentor Projects</h4>
             <p className="card-about">A collection of frontend challenges on frontendmentor.io</p>
@@ -42,6 +42,7 @@ export const FrontEndProjects = () => {
     </CardContainer>
     )
 }
+
 
 export const DesignProjects = () => {
     return(
@@ -76,11 +77,10 @@ export const DesignProjects = () => {
     )
 }
 
-
 const CardContainer = styled(Description)`
     flex-wrap: wrap;
-    padding-bottom: 2rem;
-    margin: 0 auto 4rem;
+    padding: 2rem 0;
+    margin: 0 auto 1.8rem;
     overflow: hidden;
     .title-line {
         background: #F2EEDA;
@@ -94,17 +94,17 @@ const Card =styled.div`
     background: rgba(242, 238, 218, 20%);
     width: 22rem;
     height: 27.4rem;
-    margin: 2rem 1rem;
+    margin: 0 1rem 2rem;
     padding: 0.7rem;
     text-align: center;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
     .card-img {
         height: 20rem;
-        width: 88%;
+        min-width: 320px;
     }
     .card-title {
     font-size: 1.3rem;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0 0.1rem;
     color: #32302F;
     }
     .card-about {
@@ -112,5 +112,5 @@ const Card =styled.div`
         font-weight: lighter;
         color: #32302F;
     }
+    
 `;
-
