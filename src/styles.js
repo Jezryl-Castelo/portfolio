@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const CaseContainer = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: flex-start;
 width: 100%;
+margin: 0 auto;
 overflow: hidden;
 background-color: #F2EEDA;
-padding: 5rem 20rem;
+padding: 5rem 12rem 5rem 7rem;
 p {
     font-weight: lighter;
     padding-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: left;
 }
 ul {
     padding: 2rem;
@@ -20,6 +20,12 @@ ul {
 li {
     font-size: 1.2rem;
     font-weight: lighter;
+}
+@media (max-width: 1200px) {
+    padding: 5rem 6rem 5rem 6rem;
+}
+@media (max-width: 600px) {
+    padding: 5rem 1rem 1rem 1rem;
 }
 `;
 
@@ -64,6 +70,13 @@ img {
     width: 2.7rem;
     margin: 0 0.8rem;
     padding: 0.2rem;
+}
+@media (max-width: 685px) {
+    display: inline-block;
+    ul {
+       text-align: center;
+       padding-bottom: 1rem;
+    }
 }
 `;
 
@@ -150,3 +163,11 @@ align-items: center;
     font-size: 1.5rem;
 }
 `;
+
+// export const MediaQueryBlock = styled.div`
+//     @media (max-width: 900px) {
+//         display: block;
+//         background-color: pink;
+//     
+    
+// }
