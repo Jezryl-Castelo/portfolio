@@ -69,7 +69,10 @@ export const HeaderStyle = styled.div`
     .about {
         width: 90%;
         margin: 0 auto;
-        padding-top: 1rem; 
+        padding-top: 0.5rem; 
+   }
+   .name {
+       width: 90%;
    }
 `;
 
