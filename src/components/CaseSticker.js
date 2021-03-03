@@ -12,7 +12,7 @@ import mike from '../img/persona_2.png';
 
 //Styles
 import styled from 'styled-components';
-import { CaseContainer } from '../styles';
+import { CaseContainer, FigCapStyle, SideBySide } from '../styles';
 
 
 const CaseSticker = () => {
@@ -37,11 +37,12 @@ const CaseSticker = () => {
             </ol>
            
         <Image>
-        <div class="figcaption">
-            <img src={designIssue} alt="example" />
+        <FigCapStyle>
+            <img className="sticker-mule-imgs fig-image" src={designIssue} alt="example" />
             <figcaption>Current proof website flow</figcaption>
-        </div>
-        <img src={designIssue1} alt="example" />
+            
+        </FigCapStyle>
+        <img className="sticker-mule-imgs"src={designIssue1} alt="example" />
         </Image>
        
         <h5>The Challenge</h5>
@@ -61,10 +62,12 @@ He wants to promote his company with stickers on their hard hats and trucks.Once
         <p>I think it's important to take into consideration the user's knowledge of the print process and navigating the online proofing process.</p>
 
     <SideBySide>
+    <FigCapStyle>
         <div className="left-side">
         <img className="icons" src={icons} alt="icon" />
     <figcaption>Evaluation of tasks that must be completed in order for the user to complete their goal.</figcaption>
     </div>
+    </FigCapStyle>
     <div className="right-side">
         <p className="side-text">Once the customer submits their order, a proof is sent within 4 hours. The customer will then review their proof. If they have a question, they will either reach out to customer support or request changes on their proof.</p>
         <p className="side-text">The process can be seamless or it can turn into a nightmare. Multiple emails and comments can be sent during the review process.</p>
@@ -79,15 +82,16 @@ He wants to promote his company with stickers on their hard hats and trucks.Once
 ​   </SideBySide>
 
         <h5>The Redesign</h5>
-            <p>I started my wireframe and mapping with sketches to get an idea of placement. From there, I created a prototype in Figma, which I tested with three people. I had them perform simple tasks and observed their actions. I made changes and created the high-fidelity version below.</p>
+            <p className="last-line">I started my wireframe and mapping with sketches to get an idea of placement. From there, I created a prototype in Figma, which I tested with three people. I had them perform simple tasks and observed their actions. I made changes and created the high-fidelity version below.</p>
 
         <Image>
-        <div className="side-container">
-            <img src={proof} alt="proof" />
+        <FigCapStyle>
+            <img className="proof" src={proof} alt="proof" />
             <figcaption>This is the main proof page with highlighted changes. When the order details dropdown, each item is displayed. Each item can be clicked and will populate to the left. This can help avoid navigating through multiple pages. </figcaption>
-        </div>
-        <img src={details} alt="details" />
-        <img src={comments} alt="comments" />
+        </FigCapStyle>
+        <img className="order-details" src={comments} alt="comments" />
+        <img className="order-details"src={details} alt="details" />
+        
         </Image>
 
        <h5>The Outcome</h5>
@@ -98,13 +102,24 @@ He wants to promote his company with stickers on their hard hats and trucks.Once
 
 const Image = styled.div`
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    margin: 0 auto;
     flex-wrap: wrap;
-    img {
-        height: 440px;
-        margin: 1rem 1.2rem;
+    .sticker-mule-imgs {
+        height: 400px;
+        margin: 1rem 1.8rem;
+    }
+    .order-details {
+        width: 520px;
+        height: 100%;
+        padding: 0 1rem;
+    }
+    @media (max-width: 600px) {
+        .sticker-mule-imgs,
+        .order-details {
+            width: 100%;
+            height: auto;
+         margin: 1rem auto; 
+        }
     }
 `;
 const PersonaStyle =styled.div`
@@ -117,19 +132,17 @@ const PersonaStyle =styled.div`
     .persona-text {
         padding: 2rem;
     }
+    @media (max-width: 775px) {
+        flex-direction: column;
+        width: 100%;
+    .persona-text {
+        padding: 1rem 0;
+    }
+    
+    }
 `;
 
-const SideBySide = styled.div`
-    display: flex;
-    .icons {
-        height: 30rem;
-    }
-    .right-side {
-        padding-left: 2rem;
-    }
 
-
-`;
 
 
 export default CaseSticker;

@@ -10,16 +10,19 @@ background-color: #F2EEDA;
 padding: 5rem 12rem 5rem 7rem;
 p {
     font-weight: lighter;
-    padding-bottom: 2rem;
+    padding: 2rem auto 1rem;
     font-size: 1.1rem;
     text-align: left;
 }
-ul {
-    padding: 2rem;
+ol {
+    padding: 1rem 2rem;
 }
 li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: lighter;
+}
+.last-line {
+    padding-bottom: 2rem;
 }
 @media (max-width: 1200px) {
     padding: 5rem 6rem 5rem 6rem;
@@ -73,6 +76,7 @@ img {
 }
 @media (max-width: 685px) {
     display: inline-block;
+    padding: 2rem 1rem;
     ul {
        text-align: center;
        padding-bottom: 1rem;
@@ -164,10 +168,34 @@ align-items: center;
 }
 `;
 
-// export const MediaQueryBlock = styled.div`
-//     @media (max-width: 900px) {
-//         display: block;
-//         background-color: pink;
-//     
-    
-// }
+export const FigCapStyle = styled.div`
+    font-weight: 200;
+    width: 33rem;
+    font-style: italic;
+    margin: 0 auto;
+    figcaption {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .proof {
+        width: 100%;
+    }
+    @media (max-width: 600px) {
+            width: 100%;
+    }
+`;
+
+export const SideBySide = styled.div`
+    display: flex;
+    padding-top: 2rem;
+    .icons {
+        width: 30rem;
+    }
+    .right-side {
+        padding-left: 2rem;
+    }
+    @media (max-width: 1125px) {
+        flex-direction: column;
+
+    }
+`; 

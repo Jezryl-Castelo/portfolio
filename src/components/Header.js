@@ -78,6 +78,7 @@ export const HeaderStyle = styled.div`
        width: 90%;
    }
 }
+}
 `;
 
 export const Description = styled.div`
