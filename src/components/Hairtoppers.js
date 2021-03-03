@@ -54,20 +54,20 @@ const Hairtoppers = () => {
 
 const Button = styled.div`
     display: grid;
-    width: 16rem;
-    height: 4rem;
+    width: 12rem;
+    height: 3.5rem;
     padding: 10px;
-    background: #9E5EA7;
-    box-shadow: 0px 2px 2px 2px #5B3761;
-    border-radius: 4px;
+    background-color: #97BDC7;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
+    border-radius: 1rem;
     text-align: center;
     align-content: center;
-    margin: 3rem;
+    margin: 2rem auto;
     .button-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     &:hover {
-        background-color: #5B3761;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
     }
 `;
 

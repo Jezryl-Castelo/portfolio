@@ -63,7 +63,7 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    opacity: 0.65;
+    /* opacity: 0.65; */
 }
 img:hover {
 padding: 0;
@@ -134,7 +134,7 @@ export const Dropdown = styled.div`
 
 }
 .menu-item:hover {
- background-color: #A8D5E2;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
  transition-duration: 0.5s;
  
 }       
@@ -145,8 +145,11 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 justify-content: center;
-padding: 2rem 2rem;
-@media (max-width: 600px) {
+padding: 2rem 3rem;
+@media (max-width: 1090px) {
+    width: 70%;
+}
+@media (max-width: 775px) {
     flex-direction: column;
     .drop-menu {
         width: 48%;

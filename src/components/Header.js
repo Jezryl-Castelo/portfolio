@@ -58,7 +58,6 @@ export const HeaderStyle = styled.div`
         width: 98vw;
     .profile {
         right: -5rem;
-        overflow: hidden;
     }
     @media (max-width: 720px) {
        margin: 0 auto;
