@@ -2,17 +2,16 @@ import React from 'react';
 //Images
 import designIssue from '../img/designIssue_1.png';
 import designIssue1 from '../img/designIssue_2.png';
-//Images
 import icons from '../img/icons-case.png';
 import proof from '../img/proof-redesign.png';
 import details from '../img/order-details.png';
 import comments from '../img/comments.png';
 import maria from '../img/persona_1.png';
 import mike from '../img/persona_2.png';
-
 //Styles
 import styled from 'styled-components';
 import { CaseContainer, FigCapStyle, SideBySide } from '../styles';
+import TopOfPage from '../components/TopOfPage';
 
 
 const CaseSticker = () => {
@@ -95,7 +94,7 @@ He wants to promote his company with stickers on their hard hats and trucks. Onc
         </Image>
 
        <h5>The Outcome</h5>
-       <p>This was a personal project that I created after reading e-commerce UX research by Baymard Institute. I learned how to minimize tasks and provide a better experience for the user by clarifying information. While some users admit they've approved their proof without reviewing their details, I learned that it's important to display important details during approval. It creates a positive user experience and they build trust in the company</p>   
+       <p>This was a personal project that I created after reading e-commerce UX research by Baymard Institute. I learned how to minimize tasks and provide a better experience for the user by clarifying information. While some users admit they've approved their proof without reviewing their details, I learned that it's important to display important details during approval. It creates a positive user experience and they build trust in the company</p>
 </CaseContainer>
     );
 };
