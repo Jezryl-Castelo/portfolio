@@ -46,7 +46,7 @@ export const CenterImage = styled.div`
 
 export const FooterStyle = styled.div`
 display: flex;
-width: 100vw;
+width: 100%;
 height: 100%;
 padding: 4rem 9rem 4rem 9rem;
 margin: 0 auto;
@@ -143,8 +143,15 @@ export const Dropdown = styled.div`
 export const CenterRow = styled.div`
 display: flex;
 flex-wrap: wrap;
+width: 100%;
 justify-content: center;
-padding: 2rem 10rem;
+padding: 2rem 2rem;
+@media (max-width: 600px) {
+    flex-direction: column;
+    .drop-menu {
+        width: 48%;
+    }
+}
 `;
 
 export const CheckIcon = styled.div`
@@ -165,6 +172,11 @@ align-items: center;
     justify-self: end;
     margin-right: 0.8rem;
     font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    .check {
+        font-size: 1.2rem;
+    }
 }
 `;
 

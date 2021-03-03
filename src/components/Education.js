@@ -158,10 +158,9 @@ const EdBoxStyles = styled(Dropdown)`
 const DesignSkillsStyle = styled.div`
 display: flex;
 align-items: center;
-padding: 0 8rem;
 width: 100%;
 .design-section {
-    margin: 3rem auto;
+    margin: 0 auto;
 }
 .design-section h5 {
     font-size: 1.4rem;
@@ -169,13 +168,21 @@ width: 100%;
     text-align: center;
 }
 .design-section p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
+    font-weight: lighter;
 }
 p {
     color: #F2EEDA;
 }
 .interests {
-    width: 70vw;
+    width: 600px;
     margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+@media (max-width: 600px) {
+.interests {
+    width: 100%;
+    margin-bottom: 1rem
+}   
 }
 `;
