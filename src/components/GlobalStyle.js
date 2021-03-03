@@ -35,12 +35,12 @@ h3 {
 }
 h4 {
     font-size: 1.4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 h5{
     font-size: 1.4rem;
     font-weight: 400;
-    padding-bottom: 1.6rem;
+    padding: 1rem 0 1rem;
 }
 h6 {
     font-size: 1.4rem;
@@ -54,16 +54,6 @@ a {
 li {
         list-style: none;
     }
-figcaption {
-    font-weight: 200;
-    width: 32rem;
-    font-size: 1.1rem;
-    font-style: italic;
-    padding: 0.6rem 0 0.6rem 1rem;
-    }
-ol {
-    padding: 0 2rem 2rem 2rem;
-}
 .check {
     font-size: 2.5rem;    
 } 
@@ -71,6 +61,9 @@ ol {
     color: #F2EEDA;
     text-align: center;
     font-size: 2rem;
+}
+.last-line {
+    padding-bottom: 2rem;
 }
 `;
 

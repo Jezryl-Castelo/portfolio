@@ -196,6 +196,10 @@ export const SideBySide = styled.div`
     }
     @media (max-width: 1125px) {
         flex-direction: column;
-
+    }
+    @media (max-width: 600px) {
+        .icons {
+            width: 90%;
+        }
     }
 `; 

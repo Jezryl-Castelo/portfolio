@@ -10,8 +10,7 @@ const Contact = () => {
         exit="exit" 
         variants={pageAnimation} 
         initial="hidden" 
-        animate="show"
-        >
+        animate="show">
             <ContactForm />
         </motion.div>
     );
