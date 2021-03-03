@@ -88,7 +88,10 @@ background: #A8D5E2;
 width: 0;
 position: absolute;
 bottom: -80%;
-left: 60%;
+left: 64%;
+@media (max-width: 1300px) {
+    left: 0;
+}
 `;
 
 

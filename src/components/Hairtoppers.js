@@ -28,7 +28,7 @@ const Hairtoppers = () => {
                 <li>4. Will it look natural?</li>
             </ol>
             
-            <p>In reviewing YouTube analytics, I found that 62% of the users were watching videos via mobile and 24% were desktop visits. The demographics are female between 25-65 years old. Younger users were more interested in adding volume or color and 35+ were interested in hair toppers for thinning areas or adding color/.</p>
+            <p>In reviewing YouTube analytics, I found that 62% of the users were watching videos via mobile and 24% were desktop visits. The demographics are female between 25-65 years old. Younger users were more interested in adding volume or color and 35+ were interested in hair toppers for thinning areas or adding color.</p>
 
             <h5>Design Process</h5>
             <p>I started off by mapping the tasks that would need to be completed to meet the user's goal. One challenge was brainstorming the tasks to finish checkout on a different site. To help, I created a custom form that can be completed and from there, a Paypal link can be sent and the conversation can start with the client. I then sketched the wireframe and created the prototype and high-fidelity in Figma.</p>
@@ -47,7 +47,7 @@ const Hairtoppers = () => {
             </Button>
 
             <h5>Conclusion</h5>
-            <p>The site was launched mid-January and has increased in visits and sales. At the start of the project, the client wanted traffic to continue to their e-commerce sites to increase reviews, however, seeing the increased traffic from YouTube and Instagram, they would like to offer payment on the site. From this project, I learned about the hair industry and how to create an interface with facts and not overload the screen, especially for mobile.</p>
+            <p>The site was launched mid-January 2020 and has increased in visits and sales. At the start of the project, the client wanted traffic to continue to their e-commerce sites to increase reviews, however, seeing the increased traffic from YouTube and Instagram, they would like to offer payment on the site. From this project, I learned about the hair industry and how to create an interface with facts and not overload the screen, especially for mobile.</p>
         </CaseContainer>
     );
 };

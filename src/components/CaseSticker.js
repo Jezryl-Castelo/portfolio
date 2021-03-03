@@ -26,13 +26,13 @@ const CaseSticker = () => {
 
             <h5>Design Process</h5>
     
-            <p>I wanted to learn what could be contributing to errors in Sticker Mule’s proofing process. Since Sticker Mule only offers customer support via email, I chose to review emails and find cases that involved errors related to proofing. I documented emails that were sent before their proof was approved and after production.Here is what I learned.</p>
+            <p>I wanted to learn what could be contributing to errors in Sticker Mule’s proofing process. Since Sticker Mule only offers customer support via email, I chose to review emails and find cases that involved errors related to proofing. I documented emails that were sent before their proof was approved and after production. Here is what I learned.</p>
 
             <ol>
                 <li>1. Many customers were confused about the sizing of their product.</li>
                 <li>2. When they approved their proof, they were unable to review their whole order.</li>
                 <li>3. It was difficult to view multiple designs.</li>
-                <li>4, Pricing was difficult to understand under “Order details”</li>
+                <li>4, Pricing was difficult to understand under “Order details”.</li>
                 <li>5. Changes to their artwork were missed.</li>
             </ol>
            
@@ -48,15 +48,15 @@ const CaseSticker = () => {
         <h5>The Challenge</h5>
         <p>To provide a clear layout and understanding of the user's artwork and order summary.</p>
 
-        <h6>User Personas</h6>
+        <h5>User Personas</h5>
         <PersonaStyle>
             <img className="persona" src={maria} alt="maria" />
-        <p className="persona-text">Maria Valquez is a Graphic Designer for a tech company in San Francisco. Maria works with multiple teams to create multiple designs for events.She places an order at least once a month and needs to have the designs approved before production.She's often on a tight deadline and important details can't be missed. </p>
+        <p className="persona-text">Maria Valquez is a Graphic Designer for a tech company in San Francisco. Maria works with multiple teams to create multiple designs for events. She places an order at least once a month and needs to have the designs approved before production. She's often on a tight deadline and important details can't be missed. </p>
         </PersonaStyle>
         <PersonaStyle>
             <img className="persona" src={mike} alt="mike" />
         <p className="persona-text">Mike Henderson owns a construction company.
-He wants to promote his company with stickers on their hard hats and trucks.Once in a while, he needs labels or packaging materials.He’s not familiar with print standards and rarely makes purchases online.</p>
+He wants to promote his company with stickers on their hard hats and trucks. Once in a while, he needs labels or packaging materials. He’s not familiar with print standards and rarely makes purchases online.</p>
         </PersonaStyle>
         <h6>Task Evaluation</h6>
         <p>I think it's important to take into consideration the user's knowledge of the print process and navigating the online proofing process.</p>

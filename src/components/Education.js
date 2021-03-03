@@ -127,13 +127,18 @@ export default Education;
 
 
 const EdBoxStyles = styled(Dropdown)`
+    .codecademy,
+    .udemy,
+    .edx,
+    .freeCodeCamp {
+        background: rgb(185,210,217);
+background: linear-gradient(180deg, rgba(185,210,217,1) 25%, rgba(151,189,199,1) 90%);
+    }
     .codecademy {
-        background-color: #E5B2AC;
         height: 200px;
         padding-top: 80px;
     }
     .udemy {
-        background-color: #A9D4C7;
         height: 150px;
         width: 300px;
         padding-top: 58px;
@@ -142,7 +147,6 @@ const EdBoxStyles = styled(Dropdown)`
         height: 88px;
     }
     .edx {
-        background-color: #EAB699;
         height: 200px;
         padding-top: 80px;
     }

@@ -10,11 +10,9 @@ const Relay = () => {
     return(
 <CaseContainer>
     <h4>Relay</h4>
-    <p>Relay is a customer support tool that allows the team to report issues. This is a personal project that I'm</p>
+    <p>Relay is a customer support tool that allows the team to report issues. </p>
     
     <p>In my previous position, our team worked remotely and Slack was the key tool for communication. If an agent starts to see a recurring issue, they'll usually DM or post in the support channel to see if other agents are handling similar issues. Sadly, these issues get lost in the feed or are never seen because they are discussed in a direct message. </p>
-
-    <p>In my previous position, our team worked remotely and Slack was the key tool for communication. If an agent starts to see a recurring issue, they'll usually DM or post in the support channel to see if other agents are handling similar issues. Sadly, these issues get lost in the feed or are never seen because they are discussed in a direct message.</p>
 
     <p>Here's a glimpse.</p>
     <RelayImages>
