@@ -11,7 +11,7 @@ import mike from '../img/persona_2.png';
 //Styles
 import styled from 'styled-components';
 import { CaseContainer, FigCapStyle, SideBySide } from '../styles';
-import TopOfPage from '../components/TopOfPage';
+// import TopOfPage from '../components/TopOfPage';
 
 
 const CaseSticker = () => {
