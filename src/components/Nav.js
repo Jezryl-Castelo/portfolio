@@ -53,7 +53,9 @@ const StyledNav = styled.nav`
     align-items: center;
     padding: 1rem 10rem 1rem 2.4rem;
     position: sticky;
+    z-index: 1;
     top: 0;
+    background-color: #757D7E;
     .logo {
         height: 54px;
     }

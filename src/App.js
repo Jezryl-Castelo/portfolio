@@ -15,12 +15,13 @@ import TopOfPage from './components/TopOfPage';
 
 function App() {
   const location = useLocation();
-  console.log(location); //find you key
+  console.log(location); //find key
 
   return (
     <div className="App">
-    <GlobalStyle />
     <TopOfPage />
+    <GlobalStyle />
+    
     <Nav />
     <Switch location={location} key={location.pathname}>
     <Route path="/" exact>
@@ -41,7 +42,8 @@ function App() {
     </Route>
     
     <Route path="/contact" exact>
-      <Contact />
+      <Contact />0
+      .
     </Route>
     
     </Switch>
