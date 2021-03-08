@@ -48,7 +48,7 @@ export const HeaderStyle = styled.div`
         height: 27rem;
         position: absolute;
         right: 2rem;
-        top: 8rem;
+        top: 8.5rem;
     }
     @media (max-width: 1375px) {
         display: block;

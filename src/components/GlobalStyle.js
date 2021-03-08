@@ -62,9 +62,6 @@ li {
     text-align: center;
     font-size: 2rem;
 }
-.last-line {
-    padding-bottom: 2rem;
-}
 `;
 
 
