@@ -9,11 +9,13 @@ import { pageAnimation } from '../animations';
 const Home = () => {
     return(
     <>
-    <motion.div exit="exit" variants={ pageAnimation } initial="hidden" animate="show">
+    {/* <motion.div exit="exit" variants={ pageAnimation } initial="hidden" animate="show"> */}
+    <div>
         <Header />
         <FrontEndProjects />
         <DesignProjects />
-        </motion.div>
+        </div>
+        {/* </motion.div> */}
     </>
     )
 };
