@@ -50,7 +50,7 @@ export const HeaderStyle = styled.div`
         right: 2rem;
         top: 8.5rem;
     }
-    @media (max-width: 1375px) {
+    @media (max-width: 1300px) {
         display: block;
         padding-bottom: 4rem;
     }
