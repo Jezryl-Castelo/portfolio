@@ -75,6 +75,7 @@ const StyledNav = styled.nav`
     @media (max-width: 1300px) {
         flex-direction: column;
         padding: 1rem 0rem;
+        margin: 0 auto;
         ul{
             padding: 1rem;
             justify-content: space-around;
