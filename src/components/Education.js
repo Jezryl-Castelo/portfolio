@@ -56,8 +56,16 @@ const Education = () => {
                 </CheckIcon>
                 <CheckIcon>
                     <li class="drop-menu-item">React Bootcamp</li>
-                    <p className="check">32%</p>
+                    <p className="check">42%</p>
                 </CheckIcon> 
+                <CheckIcon>
+                    <li class="drop-menu-item">React Developer 2021</li>
+                    <p className="check">38%</p>
+                </CheckIcon>
+                <CheckIcon>
+                    <li class="drop-menu-item">Complete Web & Mobile Design 2021</li>
+                    <p className="check">55%</p>
+                </CheckIcon>
                 </ul>
             </li>
         </ul>
