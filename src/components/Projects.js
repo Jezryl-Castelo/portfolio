@@ -8,7 +8,9 @@ import shortly from "../img/shortly.png";
 import relay from "../img/relay_girl.png";
 import stickers from "../img/stickermule.png";
 import hair from "../img/hairtoppers.png";
+import partwheeler from "../img/part-wheeler-website.png";
 import { Description } from './Header';
+
 
 export const FrontEndProjects = () => {
     return (
@@ -25,7 +27,7 @@ export const FrontEndProjects = () => {
         </Card>
 
         <Card>
-            <a className="card-link" href="https://github.com/Jezryl-Castelo/freeCodeCamp-product-landing-page" rel="noreferrer" target="_blank"><img className="card-img" src={daft} alt="recipe"/>
+            <a className="card-link" href="https://github.com/Jezryl-Castelo/freeCodeCamp-product-landing-page" rel="noreferrer" target="_blank"><img className="card-img" src={daft} alt="daft punk"/>
             <h4 className="card-title">Daft Punk Landing Page</h4>
             <p className="card-about">FreeCodeCamp Project using HTML & CSS</p>
             </a>
@@ -33,10 +35,19 @@ export const FrontEndProjects = () => {
 
         <Card>
 <a className="card-link" href="https://vercel.com/dashboard/projects" rel="noreferrer" target="_blank">
-                <img className="card-img" src={shortly} alt="recipe"/> 
+                <img className="card-img" src={shortly} alt="front end challenge"/> 
             
             <h4 className="card-title">Frontend Mentor Projects</h4>
             <p className="card-about">A collection of frontend challenges on frontendmentor.io</p>
+            </a>
+        </Card>
+
+        <Card>
+<a className="card-link" href="https://part-wheeler-website.vercel.app/" rel="noreferrer" target="_blank">
+                <img className="card-img" src={partwheeler} alt="part wheeler"/> 
+            
+            <h4 className="card-title">Part Wheeler</h4>
+            <p className="card-about">Implement a tool called Auction Nudge to increase exposure to their store.</p>
             </a>
         </Card>
     </CardContainer>

@@ -10,8 +10,10 @@ import interests from '../img/interests_icons.svg';
 const Education = () => {
     return(
         <>
+
         <h5 className="about-title">Education</h5>
         <CenterRow>
+        
         <EdBoxStyles>
         <ul class="menu">
             <li class="menu-item codecademy">
@@ -97,7 +99,7 @@ const Education = () => {
                     <Icon icon={circleCheck} className="check"/>
                 </CheckIcon>
                 </ul>
-            </li>
+             </li> 
         </ul>
         </EdBoxStyles>
         </CenterRow>
@@ -125,14 +127,10 @@ const Education = () => {
         <img className="interests" src={interests} alt="icons" />
      </div> 
     </DesignSkillsStyle>
-   
-    
     </>
     )
 }
 export default Education;
-
-
 
 const EdBoxStyles = styled(Dropdown)`
     .codecademy,
@@ -141,28 +139,7 @@ const EdBoxStyles = styled(Dropdown)`
     .freeCodeCamp {
         background: rgb(185,210,217);
 background: linear-gradient(180deg, rgba(185,210,217,1) 25%, rgba(151,189,199,1) 90%);
-    }
-    .codecademy {
-        height: 200px;
-        padding-top: 80px;
-    }
-    .udemy {
-        height: 150px;
-        width: 300px;
-        padding-top: 58px;
-    }
-    .udemy.drop-menu-item {
-        height: 88px;
-    }
-    .edx {
-        height: 200px;
-        padding-top: 80px;
-    }
-    .freeCodeCamp {
-        height: 150px;
-        width: 300px;
-        padding-top: 58px;
-        background-color: #97BDC7;
+
     }
 `;
 

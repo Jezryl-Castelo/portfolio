@@ -90,16 +90,32 @@ export const Dropdown = styled.div`
  padding: 0;
  margin: 10px;
 }
+
+.subject {
+    display: grid;
+    grid-template-areas: 
+    "subject arrow"
+}
+
+.arrow {
+    width: 32px;
+    grid-area: arrow;
+    position: relative;
+    right: 30px;
+    top: 10px;
+}
 .menu-item {
- display: inline-block;
- height: 80px;
- width: 200px;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ height: 40px;
+ width: 300px;
  text-align: center;
- padding-top: 28px;
- font-size: 1.2rem;
+ font-size: 1.3rem;
  color: #32302F;
  box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
- border-radius: 0 24px;
+ border-radius: 2px;
+ background: linear-gradient(180deg, rgba(185,210,217,1) 25%, rgba(151,189,199,1) 90%);
 }
 .menu-item li {
  text-decoration: none;
@@ -115,7 +131,7 @@ export const Dropdown = styled.div`
  background-color: #F2EEDA;
  min-width: 350px; 
  width: 30%;
- margin-top: 23px;
+ margin-top: 40px;
  box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
  z-index: 1;
  
@@ -123,7 +139,7 @@ export const Dropdown = styled.div`
 .drop-menu-item {
  width: 100%;
  min-height: 80px;
- font-size: 1.2rem; 
+ font-size: 1.2rem;
 }
 .drop-menu-item li {
  color: #555;
@@ -135,7 +151,8 @@ export const Dropdown = styled.div`
 .menu-item:hover {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
  transition-duration: 0.5s;
-}       
+ cursor: pointer;
+}    
 `;
 
 export const CenterRow = styled.div`
@@ -144,6 +161,8 @@ flex-wrap: wrap;
 width: 100%;
 justify-content: center;
 padding: 2rem 3rem;
+margin: 0 auto;
+
 @media (max-width: 1090px) {
     width: 70%;
 }
