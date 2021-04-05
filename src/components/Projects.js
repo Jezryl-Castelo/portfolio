@@ -43,11 +43,11 @@ export const FrontEndProjects = () => {
         </Card>
 
         <Card>
-<a className="card-link" href="https://part-wheeler-website.vercel.app/" rel="noreferrer" target="_blank">
+<a className="card-link" href="https://www.partwheeler.com/" rel="noreferrer" target="_blank">
                 <img className="card-img" src={partwheeler} alt="part wheeler"/> 
             
             <h4 className="card-title">Part Wheeler</h4>
-            <p className="card-about">Implement a tool called Auction Nudge to increase exposure to their store.</p>
+            <p className="card-about">Design a site and implement the Auction Nugget Ebay Tool</p>
             </a>
         </Card>
     </CardContainer>
