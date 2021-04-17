@@ -11,17 +11,19 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import ProjectHair from './pages/ProjectHair';
 import RelayPage from './pages/RelayPage';
 import TopOfPage from './components/TopOfPage';
+import Pannier from './components/pannier/pannier.component';
 
 
 function App() {
   const location = useLocation();
-  console.log(location); //find key
+  // console.log(location); //find key
 
   return (
     <div className="App">
     <TopOfPage />
     <GlobalStyle />
     <Nav />
+  
     <Switch location={location} key={location.pathname}>
     <Route path="/" exact>
       <Home />
@@ -36,13 +38,16 @@ function App() {
     <Route path="/relay" exact>
       <RelayPage />
     </Route>
+    <Route path="/design" exact>
+      <Pannier />
+    </Route>
     <Route path="/about-me" exact>
       <AboutMePage />
     </Route>
     
     <Route path="/contact" exact>
-      <Contact />0
-      .
+      <Contact />
+      
     </Route>
     
     </Switch>

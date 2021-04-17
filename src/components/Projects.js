@@ -9,6 +9,7 @@ import relay from "../img/relay_girl.png";
 import stickers from "../img/stickermule.png";
 import hair from "../img/hairtoppers.png";
 import partwheeler from "../img/part-wheeler-website.png";
+import andromeda from "../img/andromeda_pannier.png";
 import { Description } from './Header';
 
 
@@ -18,22 +19,7 @@ export const FrontEndProjects = () => {
         <h3>Front End Development</h3>
         <div className="title-line"></div>
        
-        <Card>
-            <a className="card-link" href="https://github.com/Jezryl-Castelo/recipe-finder" rel="noreferrer" target="_blank">
-            <img className="card-img" src={recipe} alt="recipe"/>
-            <h4 className="card-title">Recipe Finder</h4>
-            <p className="card-about">Recipe Finder implementing the Edamam API</p>
-            </a>
-        </Card>
-
-        <Card>
-            <a className="card-link" href="https://github.com/Jezryl-Castelo/freeCodeCamp-product-landing-page" rel="noreferrer" target="_blank"><img className="card-img" src={daft} alt="daft punk"/>
-            <h4 className="card-title">Daft Punk Landing Page</h4>
-            <p className="card-about">FreeCodeCamp Project using HTML & CSS</p>
-            </a>
-        </Card>
-
-        <Card>
+       <Card>
 <a className="card-link" href="https://vercel.com/dashboard/projects" rel="noreferrer" target="_blank">
                 <img className="card-img" src={shortly} alt="front end challenge"/> 
             
@@ -50,6 +36,22 @@ export const FrontEndProjects = () => {
             <p className="card-about">Design a site and implement the Auction Nugget Ebay Tool</p>
             </a>
         </Card>
+
+        <Card>
+            <a className="card-link" href="https://github.com/Jezryl-Castelo/recipe-finder" rel="noreferrer" target="_blank">
+            <img className="card-img" src={recipe} alt="recipe"/>
+            <h4 className="card-title">Recipe Finder</h4>
+            <p className="card-about">Recipe Finder implementing the Edamam API</p>
+            </a>
+        </Card>
+
+        <Card>
+            <a className="card-link" href="https://jezryl-castelo.github.io/daft-punk-landing-page/" rel="noreferrer" target="_blank"><img className="card-img" src={daft} alt="daft punk"/>
+            <h4 className="card-title">Daft Punk Landing Page</h4>
+            <p className="card-about">FreeCodeCamp Project using HTML & CSS</p>
+            </a>
+        </Card>
+
     </CardContainer>
     )
 }
@@ -63,7 +65,7 @@ export const DesignProjects = () => {
 
         <Card>
         <Link to="/relay">
-            <img className="card-img" src={relay} alt="recipe"/>
+            <img className="card-img" src={relay} alt="recipes"/>
             <h4 className="card-title">Team Communication Tool</h4>
         <p className="card-about">A tool to help your team exchange information</p>
         </Link>
@@ -71,7 +73,7 @@ export const DesignProjects = () => {
 
         <Card>
         <Link to="/case-study">
-            <img className="card-img" src={stickers} alt="recipe"/>
+            <img className="card-img" src={stickers} alt="stickers"/>
             <h4 className="card-title">Order Summary Re-design</h4>
         <p className="card-about">Brainstorming through customer issues to find a solution to reduce order errors.</p>
         </Link>
@@ -79,9 +81,17 @@ export const DesignProjects = () => {
 
         <Card>
         <Link to="/hairtoppers">
-            <img className="card-img" src={hair} alt="recipe"/>
+            <img className="card-img" src={hair} alt="hair toppers"/>
             <h4 className="card-title">Define the Product</h4>
         <p className="card-about">A simple site to help users understand the product and how it works.</p>
+        </Link>
+        </Card>
+
+        <Card>
+        <Link to="/hairtoppers">
+            <img className="card-img" src={andromeda} alt="bike bag"/>
+            <h4 className="card-title">Design Pannier Tote Bag</h4>
+        <p className="card-about">Designed from repurposed billboard banners that can be use on and off a bike</p>
         </Link>
         </Card>
     </CardContainer>
