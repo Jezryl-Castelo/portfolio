@@ -1,6 +1,6 @@
 import React from 'react';
+
 //styles
-import { CenterRow } from '../styles';
 import styled from 'styled-components';
 
 import interests from '../img/interests_icons.svg';
@@ -47,15 +47,17 @@ const DesignSkillsStyle = styled.div`
     .design-section {
     margin: 0 auto;
 }
+
 .design-section h5 {
     font-size: 1.4rem;
     color: #F2EEDA;
-    
 }
+
 .design-section p {
     font-size: 1.2rem;
     font-weight: lighter;
 }
+
 p {
     color: #F2EEDA;
 }
@@ -64,6 +66,7 @@ p {
     margin-bottom: 3rem;
     margin-top: 1rem;
 }
+
 @media (max-width: 600px) {
 .interests {
     width: 100%;
