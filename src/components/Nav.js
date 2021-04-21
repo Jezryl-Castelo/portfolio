@@ -17,7 +17,7 @@ const Nav = () => {
             </Link>
                 <ul>
                     <li>
-                        <Link to="/">Projects</Link>
+                        <Link to="/" className="nav-link">Projects</Link>
                         
                     </li>
                     <li>
@@ -50,7 +50,10 @@ const StyledNav = styled.nav`
     a {
         color: #F2EEDA;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    a:hover {
+        color: lightblue;
     }
     ul {
         display: flex;

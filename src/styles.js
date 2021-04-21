@@ -58,6 +58,9 @@ overflow: hidden;
 .footer-link a {
     font-size: 1.2rem;
 }
+.footer-link a:hover {
+    color: lightblue;
+}
 .icons {
     display: flex;
     align-items: center;

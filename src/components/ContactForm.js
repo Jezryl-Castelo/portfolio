@@ -36,8 +36,8 @@ const FormStyle = styled.div`
     }
     .self {
         grid-area: photo;
-        width: 80%;
-        max-width: 600px;
+        width: 70%;
+        max-width: 500px;
         border-radius: 1px 300px 1px 1px;
         box-shadow: 0 4px 10px 0 rgba(0,0,0,.30);
     }

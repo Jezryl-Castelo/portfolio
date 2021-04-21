@@ -14,6 +14,8 @@ const Relay = () => {
     
     <p>In my previous position, our team worked remotely and Slack was the key tool for communication. If an agent starts to see a recurring issue, they'll usually DM or post in the support channel to see if other agents are handling similar issues. Sadly, these issues get lost in the feed or are never seen because they are discussed in a direct message. </p>
 
+    <p>The purpose of the tool is to have a platform that an agent can report their issue and the graph will keep a tally. The information will help bring awareness to the team of any recurring issues. The data can be helpful in identifying the importance of an issue and what actions will take place next.</p>
+
     <p>Here's a glimpse.</p>
     <RelayImages>
     <div className="images">

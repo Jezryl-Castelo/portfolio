@@ -15,7 +15,8 @@ body {
     background: #757D7E;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-    color: #32302F;
+    /* color: #32302F; */
+    
 }
 h2 {
     color: #F2EEDA;

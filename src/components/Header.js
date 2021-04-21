@@ -1,4 +1,6 @@
 import React from 'react';
+
+import header from '../img/mountains-2.png';
 import jezryl from '../img/jezryl.svg';
 import portrait from '../img/portrait.png';
 import styled from 'styled-components';
@@ -14,6 +16,11 @@ const Header = () => {
            
             <motion.img variants={titleAnim} className="name" src={jezryl} alt="name">
             </motion.img>
+            <Background>
+        <img className="mountains-1" src={header} alt="mountains"></img>
+        {/* <img className="mountains" src={mountains} alt="mountains"></img> */}
+        
+        </Background>
             
             <div className="container">
                 <motion.h2 variants={titleAnim}className="about">I'm always curious and learning something new.
@@ -26,6 +33,17 @@ const Header = () => {
         </HeaderStyle>
     )
 }
+
+const Background = styled.div `
+    .mountains-1 {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+        right: 0;
+        top: 160px;
+        width: 60%;
+    }
+`
 
 export const HeaderStyle = styled.div`
     display: grid;
