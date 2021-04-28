@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 //Images
-import logo from '../img/logo.svg';
+import logo from '../img/logo.png';
 //Animation
 // import {motion} from 'framer-motion';
 // import {useLocation} from 'react-router-dom';
@@ -14,19 +14,17 @@ const Nav = () => {
         <StyledNav>
             <Link to="/">
             <img className="logo" src={logo} alt="logo" />
-            </Link>
+            </Link >
                 <ul>
+                
                     <li>
                         <Link to="/" className="nav-link">Projects</Link>
-                        
                     </li>
                     <li>
                         <Link to="/about-me">About Me</Link>
-                        
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>
-                        
                     </li>
                 </ul>
         </StyledNav>
@@ -45,7 +43,11 @@ const StyledNav = styled.nav`
     top: 0;
     background-color: #fff;
     .logo {
-        height: 54px;
+        position: relative;
+        top: 4px;
+        z-index: 1;
+        height: 50px;
+        width: 74px;
     }
     a {
         color: #5B606E;

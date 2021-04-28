@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav';
+// import Navbar from './components/navbar/navbar.component';
 //Pages
 import Homepage from './pages/homepage';
 import Home from './pages/Home';
@@ -15,7 +16,6 @@ import TopOfPage from './components/TopOfPage';
 import Pannier from './components/pannier/pannier.component';
 // import Homepage from './pages/homepage';
 
-
 function App() {
   const location = useLocation();
   // console.log(location); //find key
@@ -24,8 +24,8 @@ function App() {
     <div className="App">
     <TopOfPage />
     <GlobalStyle />
+
     <Nav />
-  
     <Switch location={location} key={location.pathname}>
     <Route path="/home" exact>
       <Homepage />
@@ -39,7 +39,6 @@ function App() {
     <Route path="/hairtoppers" exact>
       <ProjectHair />
     </Route>
-
     <Route path="/relay" exact>
       <RelayPage />
     </Route>
