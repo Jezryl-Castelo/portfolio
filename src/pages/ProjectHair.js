@@ -1,6 +1,6 @@
 import React from 'react';
 //Page Components
-import Hairtoppers from '../components/Hairtoppers';
+import Hairtoppers from '../components/hairtoppers.component';
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animations';

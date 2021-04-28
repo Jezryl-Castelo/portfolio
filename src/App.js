@@ -1,12 +1,12 @@
 import React from 'react';
 import Nav from './components/Nav';
-// import Navbar from './components/navbar/navbar.component';
+
 //Pages
 import Homepage from './pages/homepage';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import GlobalStyle from './components/GlobalStyle';
-import Footer from './components/Footer';
+import Footer from './components/footer.component';
 import StickerMulePage from './pages/StickerMulePage';
 import AboutMePage from './pages/AboutMePage';
 import { Switch, Route, useLocation } from 'react-router-dom';

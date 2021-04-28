@@ -1,6 +1,6 @@
 import React from 'react';
 //Page Components
-import CaseSticker from '../components/CaseSticker';
+import CaseSticker from '../components/case-study.component';
 //Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from '../animations';

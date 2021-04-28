@@ -10,23 +10,21 @@ const Education = () => {
     return(
         <>
         <EducationCard />
-        
-        
-    <DesignSkillsStyle>
-    <div className="design-section">
-    <h5>Design Skills</h5>
-    <p>Illustration</p>
-    <p>Graphic Design</p>
-    <p>Industrial Design</p>
-    <p>Typography</p>
-    </div>
-    <div className="design-section">
-    <h5>Design Tools</h5>
-    <p>Illustrator</p>
-    <p>Photoshop</p>
-    <p>Figma</p>
-    <p>XD</p>
-    </div>
+        <DesignSkillsStyle>
+            <div className="design-section">
+                <h5>Design Skills</h5>
+                <p>Illustration</p>
+                <p>Graphic Design</p>
+                <p>Industrial Design</p>
+                <p>Typography</p>
+            </div>
+            <div className="design-section">
+                <h5>Design Tools</h5>
+                <p>Illustrator</p>
+                <p>Photoshop</p>
+                <p>Figma</p>
+                <p>XD</p>
+            </div>
     </DesignSkillsStyle>
 
     <DesignSkillsStyle>

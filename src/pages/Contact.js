@@ -1,7 +1,7 @@
 import React from "react";
 //Animations
 
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/contact.component';
 
 const Contact = () => {
     return(
