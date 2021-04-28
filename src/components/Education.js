@@ -50,7 +50,7 @@ const DesignSkillsStyle = styled.div`
 
 .design-section h5 {
     font-size: 1.4rem;
-    color: #F2EEDA;
+    color: #5B606E;
 }
 
 .design-section p {
@@ -59,10 +59,10 @@ const DesignSkillsStyle = styled.div`
 }
 
 p {
-    color: #F2EEDA;
+    color: #5B606E;
 }
 .interests {
-    width: 600px;
+    width: 800px;
     margin-bottom: 3rem;
     margin-top: 1rem;
 }

@@ -43,12 +43,12 @@ const StyledNav = styled.nav`
     position: sticky;
     z-index: 1;
     top: 0;
-    background-color: #757D7E;
+    background-color: #fff;
     .logo {
         height: 54px;
     }
     a {
-        color: #F2EEDA;
+        color: #5B606E;
         text-decoration: none;
         font-size: 1.3rem;
     }
@@ -77,18 +77,5 @@ const StyledNav = styled.nav`
         }
     }
 `;
-
-// const Line = styled(motion.div)`
-// height: 0.3rem;
-// background: #A8D5E2;
-// width: 0;
-// position: absolute;
-// bottom: -80%;
-// left: 64%;
-// @media (max-width: 1300px) {
-//     left: 0;
-// }
-// `;
-
 
 export default Nav;

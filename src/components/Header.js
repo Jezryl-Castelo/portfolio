@@ -1,7 +1,7 @@
 import React from 'react';
 
 import header from '../img/mountains-2.png';
-import jezryl from '../img/jezryl.svg';
+import jezryl from '../img/jezryl_dark.svg';
 import portrait from '../img/portrait.png';
 import styled from 'styled-components';
 // import {MediaQueryBlock} from '../styles';
@@ -40,7 +40,7 @@ const Background = styled.div `
         z-index: -1;
         opacity: 0.6;
         right: 0;
-        top: 160px;
+        top: 150px;
         width: 60%;
     }
 `

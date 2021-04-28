@@ -6,7 +6,7 @@ flex-direction: column;
 width: 100%;
 margin: 0 auto;
 overflow: hidden;
-background-color: #F2EEDA;
+background-color: #fff;
 padding: 5rem 12rem 5rem 7rem;
 p {
     font-weight: lighter;
@@ -50,9 +50,16 @@ width: 100%;
 height: 100%;
 padding: 4rem 9rem 4rem 9rem;
 margin: 0 auto;
-background-color: #F2EEDA;
+background-color: #fff;
 overflow: hidden;
+ul {
+    display: block;
+    margin: 0 auto;
+}
 .footer-link {
+    place-self: left;
+    padding-left: 0;
+    height: 50%;
     margin: 0.5rem 0;
 }
 .footer-link a {

@@ -26,9 +26,9 @@ const Contact = () => {
 
 const FormStyle = styled.div`
     height: 80vh;
-    background-color: #757D7E;
+    background-color: #fff;
     text-align: left;
-    color: #F2EEDA;
+    color: #5b606e;
     .contact-title {
         font-size: 2rem;
         padding: 6rem;

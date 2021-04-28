@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
 //Pages
+import Homepage from './pages/homepage';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import GlobalStyle from './components/GlobalStyle';
@@ -12,6 +13,7 @@ import ProjectHair from './pages/ProjectHair';
 import RelayPage from './pages/RelayPage';
 import TopOfPage from './components/TopOfPage';
 import Pannier from './components/pannier/pannier.component';
+// import Homepage from './pages/homepage';
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
     <Nav />
   
     <Switch location={location} key={location.pathname}>
+    <Route path="/home" exact>
+      <Homepage />
+    </Route>
     <Route path="/" exact>
       <Home />
     </Route>

@@ -12,14 +12,14 @@ html {
     }
 }
 body {
-    background: #757D7E;
+    background: #fff;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-    /* color: #32302F; */
+    color: #5B606E;
     
 }
 h2 {
-    color: #F2EEDA;
+    color: #5B606E;
     font-weight: 300;
     font-size: 1.2rem;
     width: 68%;
@@ -37,6 +37,7 @@ h3 {
 h4 {
     font-size: 1.4rem;
     padding-bottom: 2rem;
+
 }
 h5{
     font-size: 1.4rem;

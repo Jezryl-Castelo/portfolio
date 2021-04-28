@@ -111,9 +111,6 @@ const EducationCard = () => {
            
         </ul>
     </div>
-
-
-
     </div>
     </>
     )
@@ -123,3 +120,4 @@ const EducationCard = () => {
 
 
 export default EducationCard;
+
