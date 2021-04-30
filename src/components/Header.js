@@ -18,7 +18,6 @@ const Header = () => {
             </motion.img>
             <Background>
         <img className="mountains-1" src={header} alt="mountains"></img>
-        {/* <img className="mountains" src={mountains} alt="mountains"></img> */}
         
         </Background>
             
@@ -81,16 +80,17 @@ export const HeaderStyle = styled.div`
        margin: 0 auto;
        position: relative;
        padding-top: 1rem;
-       padding-bottom: 10rem;
+       padding-bottom: 5rem;
     .profile {
         height: 21rem;
         top: 13rem;
         z-index: -1;
        }
     .about {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 0.5rem; 
+        width: 50%;
+        margin-left: 24px;
+        padding-top: 80px; 
+        
    }
    .name {
        width: 90%;

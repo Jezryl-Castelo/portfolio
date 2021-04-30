@@ -40,7 +40,7 @@ export default Education;
 
 const DesignSkillsStyle = styled.div`
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: 40px auto;
     .design-section {
     margin: 0 auto;
@@ -65,10 +65,18 @@ p {
     margin-top: 1rem;
 }
 
+@media (max-width: 1000px) {
+    width: 90%;
+    .interests {
+        width: 500px;
+    }
+}
+
 @media (max-width: 600px) {
 .interests {
-    width: 100%;
+    width: 380px;
     margin-bottom: 1rem
-}   
+} 
+
 }
 `;
