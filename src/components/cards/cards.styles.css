@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: -1;
 }
 .shape-box {
     display: inline-block;
@@ -141,4 +142,8 @@
 
 .shape-box_half:hover>.after {
     opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    
 }

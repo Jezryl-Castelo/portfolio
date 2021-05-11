@@ -25,7 +25,7 @@ const Contact = () => {
 };
 
 const FormStyle = styled.div`
-    height: 80vh;
+    height: 100vh;
     background-color: #fff;
     text-align: left;
     color: #5b606e;
@@ -35,7 +35,6 @@ const FormStyle = styled.div`
         text-align: center;
     }
     .self {
-        grid-area: photo;
         width: 70%;
         max-width: 500px;
         border-radius: 1px 300px 1px 1px;
@@ -44,9 +43,11 @@ const FormStyle = styled.div`
     .contact-card {
         width: 80%;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
         text-align: left;
+
     }
     .email {
         font-size: 1.4rem;
@@ -54,6 +55,7 @@ const FormStyle = styled.div`
     }
     .address {
         font-size: 1.2rem;
+        margin-bottom: 50px;
     }
     @media (max-width: 850px) { 
         width: 100%;

@@ -24,9 +24,10 @@ function App() {
     <div className="App">
     <TopOfPage />
     <GlobalStyle />
-
     <Nav />
+   
     <Switch location={location} key={location.pathname}>
+    
     <Route path="/home" exact>
       <Homepage />
     </Route>
