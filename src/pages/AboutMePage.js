@@ -1,6 +1,5 @@
 import React from 'react';
 //Page Components
-import Header from '../components/Header';
 import Education from '../components/education.component';
 
 
